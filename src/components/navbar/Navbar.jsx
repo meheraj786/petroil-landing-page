@@ -29,7 +29,7 @@ const Navbar = () => {
   ]
   return (
     <>
-    <div className="header border-b-3 border-border py-[16px] text-white bg-bg">
+    <div className="header font-primary border-b-3 border-border py-[16px] text-white bg-bg">
       <Container>
         <Flex>
           <Flex className="gap-[49px]">
@@ -47,7 +47,7 @@ const Navbar = () => {
       </Container>
 
     </div>
-    <div className="navbar py-[27px] bg-primary text-white">
+    <div className="navbar font-primary py-[27px] bg-primary text-white">
       <Container>
         <Flex>
           <div className="logo">
