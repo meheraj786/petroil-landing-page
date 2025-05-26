@@ -3,6 +3,16 @@ import Container from '../layouts/Container'
 import Flex from '../layouts/Flex'
 import logo from '../../assets/logo.png'
 import Button from '../layouts/Button'
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { IoLogoInstagram } from "react-icons/io";
+import { IoMailUnreadSharp } from "react-icons/io5";
+import { LuPhoneCall } from "react-icons/lu";
+
+
+
+
 
 const Navbar = () => {
   const navItems= [
@@ -33,15 +43,17 @@ const Navbar = () => {
       <Container>
         <Flex>
           <Flex className="gap-[49px]">
-            <div>mail@yourcompany.com</div>
+            <Flex className="gap-[5px]"><IoMailUnreadSharp className='w-[20px] mt-[4px]' />mail@yourcompany.com</Flex>
             <span className='absolute'></span>
-            <div>+896 120 5889 (Toll free)</div>
+            <Flex className="gap-[5px]"> <LuPhoneCall />
+            +896 120 5889 (Toll free)</Flex>
           </Flex>
           <Flex className="icons gap-[19px]">
-            <span>fa</span>
-            <span>fa</span>
-            <span>fa</span>
-            <span>fa</span>
+            <span><FaFacebookF />
+            </span>
+            <span><FaTwitter/></span>
+            <span><FaLinkedinIn/></span>
+            <span><IoLogoInstagram/></span>
           </Flex>
         </Flex>
       </Container>
