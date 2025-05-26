@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+
+@theme{
+  --color-bg: #282828;
+  --color-text: #6C6C6C;
+  --color-primary: #F40404;
+  --color-border: #FFB800;
+  --color-light-bg: #F0F0F0;
+}
+
+body{
+  scroll-behavior: smooth;
+}
