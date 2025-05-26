@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../layouts/Button'
 import Container from '../layouts/Container'
+import OverLay from '../layouts/OverLay'
 
 const Banner = () => {
   return (
@@ -11,7 +12,7 @@ const Banner = () => {
 <Button>LEARN MORE</Button>
 </div>
 </Container>
-            <div className='absolute inset-0 bg-[rgba(0,0,0,0.6)] bg-opacity-50 z-[0]'></div>
+            <OverLay/>
     </div>
   )
 }

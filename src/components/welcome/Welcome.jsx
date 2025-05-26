@@ -21,7 +21,7 @@ the country</h2>
       </Container>
 
     </div>
-    <div className="gallary">
+    <div className="gallary mb-[28px]">
       <Flex>
         <img src={gal1} alt="" />
         <img src={gal2} alt="" />
