@@ -10,13 +10,13 @@ import gal4 from '../../assets/gal4.png'
 const Welcome = () => {
   return (
     <>
-    <div className="welcome font-primary pt-[78px] pb-[100px]">
+    <div className="welcome font-primary pt-[78px] text-center md:text-left pb-[100px]">
       <Container>
         <Flex>
-          <h2 className='text-[48px] font-bold leading-[72px] md:w-[289px]'>The biggest
+          <h2 className='md:text-[48px] text-[38px] font-bold md:leading-[72px] md:w-[289px]'>The biggest
 supplier on
 the country</h2>
-<p className='font-medium text-text md:w-[651px]'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
+<p className='font-medium text-text md:text-[16px] text-[14px] px-3 md:p-0 mt-4 md:mt-0 md:w-[651px]'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
         </Flex>
       </Container>
 

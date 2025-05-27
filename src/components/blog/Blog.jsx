@@ -28,20 +28,20 @@ const Blog = () => {
     }
   ]
   return (
-    <div className="blog pt-[110px] bg-light-bg pb-[162px]">
+    <div className="blog pt-[110px] bg-light-bg md:pb-[162px] pb-[100px]">
       <div className="blogs">
         <Container>
           <Flex>
             {
               blogs.map((blog)=>(
-                <div className='box px-[45px] pt-[75px] pb-[55px] relative' style={{
+                <div className='box text-center md:text-left mb-3 md:mb-0 px-[45px] pt-[75px] pb-[55px] relative' style={{
                   backgroundImage: `url(${blog.img})`,
                   backgroundSize: "cover"
 
                 }}>
                   <div className="relative z-10">
-                  <h3 className='w-[249px] text-white text-[24px] font-bold mb-[52px]'>{blog.title}</h3>
-                  <Button className="!bg-[rgba(255,255,255,0.5)] text-white hover:text-black"><a href={blog.link}>Read More</a></Button>
+                  <h3 className='md:w-[249px] text-white text-[24px] font-bold  md:text-left mb-[52px]'>{blog.title}</h3>
+                  <Button className="!bg-[rgba(255,255,255,0.5)]  text-white"><a href={blog.link}>Read More</a></Button>
                   </div>
                   <OverLay/>
 
@@ -51,7 +51,7 @@ const Blog = () => {
 
           </Flex>
           <div className='w-full mt-[29px] text-right'>
-            <Flex className='font-bold justify-end gap-[5px]'>
+            <Flex className='font-bold md:justify-end justify-center gap-[5px]'>
             MORE FROM THE BLLOG <IoIosArrowForward /></Flex>
           </div>
 

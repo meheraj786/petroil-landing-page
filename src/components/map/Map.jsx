@@ -8,11 +8,11 @@ const Map = () => {
   return (
     <div>
       <img src={map} alt="" />
-      <div className='py-[45px] border-b-3 border-border text-white bg-primary'>
+      <div className='py-[45px] border-b-3 border-border text-white text-center md:text-left bg-primary'>
         <Container>
           <Flex>
-            <h2 className='text-[36px] font-bold'>Want to join as member branch in your area?</h2>
-            <Button className="border hover:bg-red-700 border-white text-white">Contact</Button>
+            <h2 className='md:text-[36px] text-[26px] px-3 md:px-0 mb-4 md:mb-0 font-bold'>Want to join as member branch in your area?</h2>
+            <Button className="border hover:bg-red-700 mx-auto md:mx-0 border-white text-white">Contact</Button>
           </Flex>
         </Container>
 

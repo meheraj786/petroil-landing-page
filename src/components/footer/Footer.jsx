@@ -15,41 +15,41 @@ const Footer = () => {
   const company=["Company", "Home", "About", "Services", "Galary"]
   const others=["Others", "Blog", "Contact", "Terms & Conditions", "Privacy Policy"]
   return (
-    <div className="bg-[#1F1F1F] text-white">
+    <div className="bg-[#1F1F1F] text-center md:text-left text-white">
       <div className='pt-[150px] pb-[170px]'>
         <Container>
-          <Flex className="items-start">
+          <Flex className="md:items-start flex-col md:flex-row justify-center md:justify-between">
           <div>
-            <img src={logo} alt="" />
+            <img className='mx-auto md:mx-0' src={logo} alt="" />
             <ul className='mt-[33px]'>
-              <li className='mb-[15px] md:w-[65%]'><Flex className="gap-[5px]"><IoMailUnreadSharp className='w-[20px] mt-[4px]' />mail@yourcompany.com</Flex></li>
-              <li className='mb-[15px] md:w-[65%]'><Flex className="gap-[5px]"> <LuPhoneCall />
+              <li className='mb-[15px] md:w-[65%]'><Flex className="gap-[5px] justify-center md:justify-start"><IoMailUnreadSharp className='w-[20px] mt-[4px]' />mail@yourcompany.com</Flex></li>
+              <li className='mb-[15px]  md:w-[65%]'><Flex className="gap-[5px] justify-center md:justify-start"> <LuPhoneCall />
               +896 120 5889 (Toll free)</Flex></li>
-              <li className='mb-[34px] '><Flex className="gap-[5px]">
+              <li className='mb-[34px] '><Flex className="gap-[5px] justify-center md:justify-start">
               <GrMap />
               101 Baker Street, New York, USA, 12345</Flex></li>
             </ul>
-            <div className="icons w-[152px]">
-            <Flex className="icons gap-[1px]">
-            <span className='p-[7px] rounded-full bg-primary text-white'><FaFacebookF />
+            <div className="icons mx-auto md:mx-0 mb-5 md:mb-0 w-[152px]">
+            <Flex className="icons gap-[1px] ">
+            <span className='p-[7px] rounded-full bg-primary hover:bg-bg cursor-pointer text-white'><FaFacebookF />
             </span>
-            <span className='p-[7px] rounded-full bg-primary text-white'><FaTwitter/></span>
-            <span className='p-[7px] rounded-full bg-primary text-white'><FaLinkedinIn/></span>
-            <span className='p-[7px] rounded-full bg-primary text-white'><IoLogoInstagram/></span>
+            <span className='p-[7px] rounded-full bg-primary hover:bg-bg cursor-pointer text-white'><FaTwitter/></span>
+            <span className='p-[7px] rounded-full bg-primary hover:bg-bg cursor-pointer text-white'><FaLinkedinIn/></span>
+            <span className='p-[7px] rounded-full bg-primary hover:bg-bg cursor-pointer text-white'><IoLogoInstagram/></span>
           </Flex>
             </div>
           </div>
-          <ul>
+          <ul className='mb-7 md:mb-0'>
             {
               company.map((item,index)=>(
-                <li className={`${index==0 ? "font-bold mb-[21px]": "text-[14px] mb-[15px] font-regular"}`}>{item}</li>
+                <li className={`${index==0 ? "font-bold mb-[21px] ": "text-[14px] mb-[6px] md:mb-[15px] font-regular cursor-pointer hover:opacity-80"}`}>{item}</li>
               ))
             }
           </ul>
-          <ul>
+          <ul className='mb-7 md:mb-0'>
           {
               others.map((item,index)=>(
-                <li className={`${index==0 ? "font-bold mb-[21px]": "text-[14px] mb-[15px] font-regular"}`}>{item}</li>
+                <li className={`${index==0 ? "font-bold mb-[21px]": "text-[14px] mb-[6px] md:mb-[15px] font-regular cursor-pointer hover:opacity-80"}`}>{item}</li>
               ))
             }
           </ul>
