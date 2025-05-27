@@ -9,7 +9,7 @@ const Banner = () => {
 <Container>
 <div className='relative z-10 text-white'>
 <h1 className='text-[64px] font-bold mb-[31px] md:w-[842px]'>We exist since 1975 on the oil and gas industry.</h1>
-<Button>LEARN MORE</Button>
+<Button >LEARN MORE</Button>
 </div>
 </Container>
             <OverLay/>

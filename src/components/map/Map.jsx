@@ -12,7 +12,7 @@ const Map = () => {
         <Container>
           <Flex>
             <h2 className='text-[36px] font-bold'>Want to join as member branch in your area?</h2>
-            <Button className="border border-white text-white">Contact</Button>
+            <Button className="border hover:bg-red-700 border-white text-white">Contact</Button>
           </Flex>
         </Container>
 

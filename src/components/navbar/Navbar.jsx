@@ -49,11 +49,11 @@ const Navbar = () => {
             +896 120 5889 (Toll free)</Flex>
           </Flex>
           <Flex className="icons gap-[19px]">
-            <span><FaFacebookF />
+            <span className='hover:text-gray-300 cursor-pointer'><FaFacebookF />
             </span>
-            <span><FaTwitter/></span>
-            <span><FaLinkedinIn/></span>
-            <span><IoLogoInstagram/></span>
+            <span className='hover:text-gray-300 cursor-pointer'><FaTwitter/></span>
+            <span className='hover:text-gray-300 cursor-pointer'><FaLinkedinIn/></span>
+            <span className='hover:text-gray-300 cursor-pointer'><IoLogoInstagram/></span>
           </Flex>
         </Flex>
       </Container>
@@ -69,11 +69,11 @@ const Navbar = () => {
             <Flex className="gap-x-[47px]">
               {
                 navItems.map((item)=>(
-                  <li className='font-semibold text-[16px]'><a href={item.link}>{item.item}</a></li>
+                  <li className='font-semibold text-[16px] hover:text-gray-300'><a href={item.link}>{item.item}</a></li>
 
                 ))
               }
-              <Button className="border border-white text-white">Contact</Button>
+              <Button className="border  border-white text-white">Contact</Button>
             </Flex>
           </ul>
         </Flex>

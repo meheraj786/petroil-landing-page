@@ -14,7 +14,7 @@ const About = () => {
             </h2>
           </div>
           <div className='px-[282px] md:w-[70%] bg-[url(assets/aboutBg.png)] bg-cover pt-[168px] pb-[142px]'>
-            <Button className="bg-white !text-primary">Learn More</Button>
+            <Button className="bg-white !hover:bg-primary text-primary">Learn More</Button>
           </div>
         </Flex>
 

@@ -6,6 +6,8 @@ import blog1 from '../../assets/blog1.png'
 import blog2 from '../../assets/blog2.png'
 import blog3 from '../../assets/blog3.png'
 import OverLay from '../layouts/OverLay'
+import { IoIosArrowForward } from "react-icons/io";
+
 
 const Blog = () => {
   const blogs= [
@@ -39,7 +41,7 @@ const Blog = () => {
                 }}>
                   <div className="relative z-10">
                   <h3 className='w-[249px] text-white text-[24px] font-bold mb-[52px]'>{blog.title}</h3>
-                  <Button className="!bg-[rgba(255,255,255,0.5)]"><a href={blog.link}>Read More</a></Button>
+                  <Button className="!bg-[rgba(255,255,255,0.5)] text-white hover:text-black"><a href={blog.link}>Read More</a></Button>
                   </div>
                   <OverLay/>
 
@@ -49,7 +51,8 @@ const Blog = () => {
 
           </Flex>
           <div className='w-full mt-[29px] text-right'>
-            <p className='font-bold'>MORE FROM THE BLLOG</p>
+            <Flex className='font-bold justify-end gap-[5px]'>
+            MORE FROM THE BLLOG <IoIosArrowForward /></Flex>
           </div>
 
         </Container>
