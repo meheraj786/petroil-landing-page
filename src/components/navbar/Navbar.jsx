@@ -48,9 +48,9 @@ const Navbar = () => {
       <Container>
         <Flex className="flex-col md:flex-row">
           <Flex className="md:gap-[49px] mb-3 md:mb-0 gap-2 mb flex-col md:flex-row">
-            <Flex className="gap-[5px]"><IoMailUnreadSharp className='w-[20px] mt-[4px]' />mail@yourcompany.com</Flex>
+            <Flex className="gap-[5px] text-[14px] md:text-[16px]"><IoMailUnreadSharp className='w-[20px] mt-[4px]' />mail@yourcompany.com</Flex>
             <span className='absolute'></span>
-            <Flex className="gap-[5px]"> <LuPhoneCall />
+            <Flex className="gap-[5px] text-[14px] md:text-[16px]"> <LuPhoneCall />
             +896 120 5889 (Toll free)</Flex>
           </Flex>
           <Flex className="icons gap-[19px]">
