@@ -50,6 +50,7 @@ const Navbar = () => {
             +896 120 5889 (Toll free)</Flex>
           </Flex>
           <Flex className="icons gap-[19px]">
+    
             <span className='hover:text-gray-300 cursor-pointer'><FaFacebookF />
             </span>
             <span className='hover:text-gray-300 cursor-pointer'><FaTwitter/></span>
@@ -67,11 +68,7 @@ const Navbar = () => {
             <img src={logo} alt="" />
           </div>
           <ul>
-              <ScrollSpy
-        activeClass="text-blue-500 font-bold"
-        offsetTop={100}
-        scrollThrottle={100}
-      >
+              
             <Flex className="gap-x-[47px] hidden md:flex">
               {
                 navItems.map((item)=>(
@@ -81,7 +78,6 @@ const Navbar = () => {
               }
               <Button className="border  border-white text-white">Contact</Button>
             </Flex>
-              </ScrollSpy>
           </ul>
           
           {
