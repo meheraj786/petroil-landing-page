@@ -5,7 +5,7 @@ import Button from '../../components/layouts/Button'
 
 const Services = () => {
   return (
-    <div className='font-primary'>
+    <div id="services" className='font-primary'>
       <Flex>
         <div className="md:w-1/2 relative pt-[13px] md:pl-[390px] pb-[19px]  text-center md:text-left">
         <h2 className='md:text-[64px] text-[44px] px-3 md:px-0 font-bold '>Our Services</h2>

@@ -11,11 +11,7 @@ import { IoMailUnreadSharp } from "react-icons/io5";
 import { LuPhoneCall } from "react-icons/lu";
 import { HiMenu } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
-
-
-
-
-
+import ScrollSpy from "react-ui-scrollspy";
 
 
 const Navbar = () => {
@@ -27,19 +23,19 @@ const Navbar = () => {
     },
     {
       item: "About",
-      link: "#"
+      link: "#about"
     },
     {
       item: "Services",
-      link: "#"
+      link: "#services"
     },
     {
       item: "Gallary",
-      link: "#"
+      link: "#gallary"
     },
     {
       item: "Blog",
-      link: "#"
+      link: "#blog"
     },
   ]
   return (
@@ -71,6 +67,11 @@ const Navbar = () => {
             <img src={logo} alt="" />
           </div>
           <ul>
+              <ScrollSpy
+        activeClass="text-blue-500 font-bold"
+        offsetTop={100}
+        scrollThrottle={100}
+      >
             <Flex className="gap-x-[47px] hidden md:flex">
               {
                 navItems.map((item)=>(
@@ -80,6 +81,7 @@ const Navbar = () => {
               }
               <Button className="border  border-white text-white">Contact</Button>
             </Flex>
+              </ScrollSpy>
           </ul>
           
           {

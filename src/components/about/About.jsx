@@ -5,7 +5,7 @@ import Button from '../layouts/Button'
 
 const About = () => {
   return (
-    <div className="about py-[136px] text-white bg-light-bg">
+    <div id="about" className=" py-[136px] text-white bg-light-bg">
       <Container>
         <Flex className="bg-primary">
           <div className='md:w-[30%] px-3 md:px-0 md:py-0  py-10 text-center md:text-left md:pl-[74px]'>

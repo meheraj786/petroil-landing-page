@@ -28,7 +28,7 @@ const Blog = () => {
     }
   ]
   return (
-    <div className="blog pt-[110px] bg-light-bg md:pb-[162px] pb-[100px]">
+    <div id='blog' className="blog pt-[110px] bg-light-bg md:pb-[162px] pb-[100px]">
       <div className="blogs">
         <Container>
           <Flex>
